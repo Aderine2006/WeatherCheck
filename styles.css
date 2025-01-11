@@ -1,0 +1,99 @@
+/* styles.css */
+body {
+    font-family: 'Poppins', sans-serif; /* Use a modern font */
+    margin: 0;
+    padding: 0;
+    background: image-set("rainbow.jpg");
+    background-size: cover;
+    background-position: center;
+    color: rgb(244, 237, 237);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .container {
+    background: rgba(231, 10, 10, 0.1); /* Frosted glass effect */
+    backdrop-filter: blur(10px); /* Ensure browser support for blur */
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Depth with shadow */
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #5c234a;
+    text-shadow: 2px 2px 5px rgba(79, 30, 71, 0.5); /* Glow effect */
+  }
+  
+  input {
+    padding: 15px;
+    width: calc(100% - 20px);
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    font-size: 1rem;
+    background: rgba(73, 1, 1, 0.2); /* Transparent background */
+    color: rgb(48, 4, 4);
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1); /* Inner shadow */
+    margin-bottom: 15px;
+  }
+  
+  input::placeholder {
+    color: #813a6a;
+  }
+  
+  button {
+    padding: 15px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    background: linear-gradient(135deg, #bb0d9b, #28182b); /* Gradient button */
+    color: rgb(250, 246, 246);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 5px 15px rgba(7, 7, 7, 0.2);
+  }
+  
+  button:hover {
+    transform: translateY(-5px); /* Subtle lift effect */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .weather-box {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(253, 253, 253, 0.15); /* Frosted effect */
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(5, 5, 5, 0.2);
+    display: none; /* Initially hidden */
+  }
+  
+  .weather-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #320838;
+  }
+  
+  .weather-box p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #5a1b56;
+  }
+  
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+    input, button {
+      font-size: 0.9rem;
+    }
+  }
+  
